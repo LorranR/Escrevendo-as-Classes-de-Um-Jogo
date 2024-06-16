@@ -1,0 +1,24 @@
+# defini a classe heroi
+class heroi:
+#parametros do heroi
+    def __init__(self, nome, idade, tipo,ataque):
+        self.nome = nome
+        self.idade = idade
+        self.tipo = tipo
+        self.ataque = ataque
+# mensagem com interpolação chamando os paramentos
+    def mensagem(self):
+        print(f"O seu herói é conhecido como {self.nome} e tem {self.idade} anos, sendo um {self.tipo} e atacou usando {self.ataque}!!!")
+
+    
+# Criando os objetos da classe Heroi
+o_heroi1 = heroi("Ricardo Coração de Leão","41","Guerreiro","espada")
+o_heroi2 = heroi("John Dee","120","Mago", "magia")
+o_heroi3 = heroi("Fujibayashi Nagato","21","Ninja", "shuriken")
+o_heroi4 = heroi("Li Chang Yin","25","Monge","artes marciais")
+
+#chamando das classes
+o_heroi1.mensagem()
+o_heroi2.mensagem()
+o_heroi3.mensagem()
+o_heroi4.mensagem() 
